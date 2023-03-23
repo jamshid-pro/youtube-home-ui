@@ -1,0 +1,26 @@
+header
+    .navbar
+        .menu-bar
+            i.bi.bi-list#menu-icon
+            a(class="logo" href="#")
+                img.logo(src="/assets/icons/youtube-logo.png")
+
+        .form-group
+            input(type="text" placeholder="Search" id="search")
+            div.search-icon
+                i.bi.bi-search
+            div.micro-icon
+                i.bi.bi-mic-fill
+
+        .login
+            i.bi.bi-grid-3x3-gap-fill
+            i.bi.bi-three-dots-vertical
+            button
+                i.bi.bi-person-circle
+                | SIGN IN
+
+    .navbar-bottom
+        - var list = ["All", "Angular", "React", "Qwik", "JavaScript", "TypeScript", "Mobile", "Frontend", "Backend", "Java", "Linux", "MongoDB", "SQL"]
+
+        each val in list
+            a(href="#" class="navbar-bottom__link") #{val}

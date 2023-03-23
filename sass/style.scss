@@ -1,0 +1,35 @@
+$gray:rgba(0, 0, 0, 0.2);
+$bg-gray: #f0f0f0;
+$sky: #3EA6FF;
+
+body {
+    overflow-x: hidden;
+}
+
+.d-block {
+    display: block;
+} 
+
+.d-none {
+    display: none;
+}
+
+.aside-left {
+    left:0;
+}
+
+.left-0 {
+    margin-left: 0 !important;
+    width: 85% !important;
+    margin: 150px auto !important;
+}
+.nav-bottom {
+    margin-left: 0;
+    width: 85% !important;
+    margin: 0 auto!important;
+}
+
+@import "./header";
+@import "./aside";
+@import "./main";
+@import "./media";

@@ -1,0 +1,45 @@
+main {
+    margin-left: 250px;
+    margin-top: 150px;
+    width: calc(100% - 300px);
+    padding: 10px 40px;
+    transition: all .5s ease;
+    // overflow-y: scroll;
+
+    .video-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+
+.item {
+    margin-bottom: 20px;
+    .item-video {
+        iframe {
+            width: 100%;
+            min-height: 250px;
+            border-radius: 12px;
+        }
+    }
+}
+.item-description {
+    margin-top: 8px;
+    padding-right: 15px;
+    display: flex;
+    gap: 20px;
+
+    .img-channel {
+        img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+        }
+    }
+    .item-text {
+        p {
+            margin: 5px 0;
+        }
+    }
+}

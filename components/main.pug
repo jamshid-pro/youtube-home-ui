@@ -1,0 +1,122 @@
+mixin video-item(video, img, title, chname, info)
+    .item 
+        .item-video
+            iframe(src=video)
+
+        .item-description 
+            .img-channel 
+                img(src=img)
+            .item-text
+                h3= title
+
+                p= chname
+
+                .item-info
+                    p= info
+
+mixin hello(name, age)
+    h1= name 
+    p= age
+
+
+main
+    .video-items
+        +video-item(
+            "https://www.youtube.com/embed/tR10RO97u2E",
+            'https://yt3.ggpht.com/AhRkgu01vCTifaLymgO4s6vLzjjoUjA_UH18mRTB5EekOE2bK0oqlbUnVUm4lG2Ge0p80Q7XkGg=s48-c-k-c0x00ffffff-no-rj',
+            '"Terpila" yoki xalq qahramoni? — ACTIVIST | SUBYEKTIV',
+            "Subyektiv",
+            "532K views 1 day ago"
+        )
+        +video-item(
+            "https://www.youtube.com/embed/61py77BsnBs",
+            "https://yt3.ggpht.com/Z5eu8JdvNvpTfCM0Tcn8P4I4IopNXm6vKdDUUAJXAWZgHA476dMNnIHHI7GM-St46c-TN_Z5hQ=s48-c-k-c0x00ffffff-no-rj",
+            "Josh*Podcast | Angular: Yaxshi Frontend dasturchi bo'lish",
+            "Josh*Developer",
+            "500 views 2 days ago"
+        )
+
+        +video-item(
+            "https://www.youtube.com/embed/jUGweL0-IDE",
+            "https://yt3.ggpht.com/iSmJYLEcj-_7WiidaLNZCC6ZVoLT-tJ4aGBYsEqK0O3MjF4hWNmk4aixGojhA5088BcghTXZeA=s48-c-k-c0x00ffffff-no-rj",
+            "TypeScript to'liq kurs o'zbek tilida || ReactJS & Typescript darslari loyiha",
+            "Samar Badriddinov",
+            "1.4K views 1 month ago"
+        )
+
+        +video-item(
+            "https://www.youtube.com/embed/-S2fNYWpA1A", 
+            "https://yt3.ggpht.com/ytc/AL5GRJVxWx9PR-vixFeQyeu5HUAkbXA8-nFp-ttcFHTWJA=s48-c-k-c0x00ffffff-no-rj",
+            "Tensor nima?",
+            "Farkhod Dadajonov",
+            "1K views 3 years ago"
+
+        )
+
+        +video-item(
+            "https://www.youtube.com/embed/llSrCjDxbkI",
+            "https://yt3.ggpht.com/Dx7ChB98gtKb6iSScXKZbMXkixV8ClSiHvQ4BH-LH4plc_wLdYL97cd875WcVhxO0h2ZhjsU5A=s48-c-k-c0x00ffffff-no-rj",
+            "МУФТИЙ НУРИДДИН ҲОЖИ ДОМЛА ҲАЗРАТЛАРИНИНГ РАМАЗОН ОЙИ ТАБРИКЛАРИ",
+            "MuslimunUz",
+            "19,997 views 10 hours ago"
+        )
+
+
+
+        +video-item(
+            "https://www.youtube.com/embed/gmF3i2WAP-Y",
+            "https://yt3.ggpht.com/UD6Hc26bfcZIVA6AvB2iaZqzgMQ2B-d6rGPXTna4C9_2g-lvVw46RhSJgEv5roqRSygJR9Ie4w=s48-c-k-c0x00ffffff-no-rj",
+            "Angular 13: Онлайн магазин с нуля Material UI + RxJS + API",
+            "Bulkin Denus",
+            "7,426 views  6 month ago"
+
+        )
+
+        +video-item(
+            "https://www.youtube.com/embed/v_qsqpnoEJk",
+            "https://yt3.ggpht.com/s5Eex4ZIqBSe2y2k5aidi71WGkfEJORkY-Hn2QDVMJxnkpRB5FdlOiHC9V1yyLuxSaCv5JCVYmM=s48-c-k-c0x00ffffff-no-rj",
+            "Image Hover Effect Background Blur and Button with HTML &amp; CSS - Web Design Tutorial",
+            "dcode",
+            "443 views 13 hour ago"
+        )
+
+        +video-item(
+            "https://www.youtube.com/embed/LXUzVNgEVM0?list=PL8O4u0nxMURsQZHX2G8B3ttbhvRzxJ3md", 
+            "https://yt3.ggpht.com/ytc/AL5GRJXnhVzZjU4ookLgsL9FvVAAkDx0a6AaUb-F4nCl4Q=s48-c-k-c0x00ffffff-no-rj",
+            "REACT QUERY kod yozishingizni osonlashtiradi",
+            "Javohir Group",
+            "1.5K views 1 month ago"
+        )
+
+        +video-item(
+            "https://www.youtube.com/embed/6Ps7dxJ6qdo",
+            "https://yt3.ggpht.com/ytc/AL5GRJVxWx9PR-vixFeQyeu5HUAkbXA8-nFp-ttcFHTWJA=s48-c-k-c0x00ffffff-no-rj",
+            "Ajoyib Dasturlash! WebSocket bilan tanishamiz", 
+            "Farkhod Dadajonov",
+            "2.4K views  3 years ago"
+        )
+
+        +video-item(
+            "https://www.youtube.com/embed/asEzNp_Y-O8",
+            "https://yt3.ggpht.com/ytc/AL5GRJWp5A90w6va0q2KUZdP31jRjvUnPkRHQyfBtzhePA=s48-c-k-c0x00ffffff-no-rj",
+            "🔥 Deno vs Node | Top 5 differences",
+            "JavaScript Academy",
+            "4,876 views  2 years ago"
+
+        )
+
+        +video-item(
+            "https://www.youtube.com/embed/qQXXI5QFUfw",
+            "https://yt3.ggpht.com/ytc/AL5GRJWWLVcnz2BmF7xp-8zouwD5MowoXhFYgCxkruxE=s48-c-k-c0x00ffffff-no-rj",
+            "NEW! Most Popular Programming Languages 1965 - 2022",
+            "Data is Beutiful",
+            "770K views 3 month ago"
+        )
+
+        +video-item(
+            "https://www.youtube.com/embed/t10QcFx7d5k",
+            'https://yt3.ggpht.com/ytc/AL5GRJXPR4dSz0wwP-elkeiWUMnfZlCtNZP8Rd-tmFOZYg=s48-c-k-c0x00ffffff-no-rj',
+            "Django Project – Code a CRM App Tutorial",
+            "freeCodeCamp",
+            "100 views 1 hour ago"
+        )

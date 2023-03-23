@@ -1,0 +1,53 @@
+aside {
+	padding: 10px 4px;
+	width: 237px;
+	height: calc(100vh - 68px);
+	background-color: #fff;
+	position: fixed;
+	top: 68px;
+	left: 0;
+}
+
+
+#aside-logo {
+	display: none;
+}
+
+.aside-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	a {
+		color: #111;
+		padding: 5px 10px;
+		margin: 0 10px;
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		border-radius: 8px;
+		&:first-child {background-color:$bg-gray;}
+		&:hover {
+			background-color:$bg-gray;
+		}
+
+		img {
+			width: 25px !important;
+			height: 25px !important;
+		}
+		i {
+			font-size: 24px;
+		}
+
+		
+	}
+
+	hr {
+		color: $gray;
+		margin: 10px 0;
+		width: 100%;
+	}
+	p {
+		margin-left: 20px;
+	}
+}
