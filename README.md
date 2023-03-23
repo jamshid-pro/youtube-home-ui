@@ -1,8 +1,8 @@
 ## Install PUG and Sass 
 ```
-npm i -D pug-cli
+sudo npm i -g pug-cli
 
-npm i -D sass
+sudo npm i -g sass
 ```
 
 ## Run Pug and Sass compiler
